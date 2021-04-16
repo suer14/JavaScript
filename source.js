@@ -1,6 +1,7 @@
-let writOutput = function(text)
+let writeOutput = function(text)
 {
-    document.write(`<h1>${text}</h1>`);
+    document.write(`<h2>${text}</h2>`);
+
 }
 
 writeOutput("Done!");
@@ -15,7 +16,7 @@ let truncateString = function(str,num)
     return str.slice(0,num)+'...';
 
 }
-document.write(truncateString("Hoje está um dia feioso",22));
+document.write(truncateString("Hoje está um dia feioso.",23));
 
 document.write(truncateString("Hoje está um dia feioso",10));
 
@@ -27,4 +28,4 @@ function titleCase(str) {
     return splitStr.join(' '); 
  }
  
- document.write(titleCase("hoje está a chover demasiado"));
+ document.write(titleCase("hoje está muito chuvoso"));
